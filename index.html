@@ -21,9 +21,9 @@
     <body>
     <div id="myCarrousel">
         <ul style="list-style: none;">
-            <li><img src="http://lorempixel.com/700/200/" /></li>
-            <li><img src="http://lorempixel.com/g/700/200/" /></li>
-            <li><img src="http://lorempixel.com/700/200/abstract/" /></li>
+            <li><img src="http://lorempixel.com/700/300/" width="700" height="300"/></li>
+            <li><img src="http://lorempixel.com/g/700/300/" width="700" height="300"/></li>
+            <li><img src="http://lorempixel.com/700/300/abstract/" width="700" height="300"/></li>
         </ul>
     </div>
     <script src="jquery.min.js"></script>
@@ -32,7 +32,9 @@
         $(function () {
 
             var config = {
-                time: 2000
+                time: 2000,
+                width: 700,
+                height: 300
             };
 
             theCarrousel(config);

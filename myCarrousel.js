@@ -9,7 +9,7 @@ function theCarrousel(config){
         currentImg = img.eq(i);
     img.hide();
 
-    currentImg.css("display", "block");
+    currentImg.css("display", "block").width(config.width).height(config.height);
 
     function slideImg(slideTime){
         setTimeout(function () {
@@ -20,7 +20,7 @@ function theCarrousel(config){
             }
             currentImg.css('display', 'none');
             currentImg = img.eq(i);
-            currentImg.css('display', 'block');
+            currentImg.css('display', 'block').width(config.width).height(config.height);
             slideImg(slideTime);
         } , slideTime);
     }
